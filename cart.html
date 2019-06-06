@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>購物車</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="activity">
+        <div class="container">
+            新春特價中！三件免運費再抽大紅包！
+        </div>
+    </header>
+    <nav class="mail-menu">
+        <div class="about">
+            <button>MENU<i class="fas fa-caret-down"></i></button>
+            <ul>
+                <li><a href="#">線上商城</a></li>
+                <li><a href="#">關於剁手</a></li>
+                <li><a href="#">聯絡我們</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <ul>
+                <li>剁手網</li>
+            </ul>
+        </div>
+        <div class="facebook">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fas fa-globe-asia"></i></a></li>
+                <li class="cart"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="keep">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="fas fa-angle-left"></i>繼續購物</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="eyeshadowitem">
+        <div class="container">
+            <table>
+                <tr>
+                    <th>購物車</th>
+                    <th>價格</th>
+                    <th>數量</th>
+                    <th>小計</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eyeprice">
+                            <div>
+                                <a rel="#">
+                                    <img src="/shop/images/eyeshadow.jpg" />
+                                </a>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>神采飛揚16色珠光眼影 [自然色]</li>
+                                    <li>YR-5640</li>
+                                    <li><a href="#">刪除</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$1750</td>
+                    <td><input type="text" name="number" value="1" /></td>
+                    <td class="totalprice">$1750</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="checkout">
+        <div class="container">
+            <div class="code">
+                使用折扣碼:<input type="text" name="discount" />
+            </div>
+            <div class="discount">
+                <ul>
+                    <li>商品金額</li>
+                    <li>$1750</li>
+                </ul>
+                <ul>
+                    <li>運費</li>
+                    <li>$0</li>
+                </ul>
+                <hr />
+                <ul>
+                    <li>總計</li>
+                    <li>$1750</li>
+                </ul>
+                <button>結帳</button>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <div class="newspaper">
+                擔心錯過剁手的好機會嗎？<br />
+                快來訂電子報吧！
+            </div>
+            <form action="#" class="sub">
+                <div class="e-mail">
+                    <i class="fas fa-envelope"></i><input type="text" name="e-mail" placeholder="e-mail" />
+                </div>
+                <div class="submit">
+                    <input type="submit" value="訂！" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="contact">
+            <ul>
+                <li><a href="#">線上商城</a></li>
+                <li><a href="#">關於剁手</a></li>
+                <li><a href="#">聯絡我們</a></li>
+                <li><a href="#">運費資訊</a></li>
+                <li><a href="#">隱私權政策</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="BuildSchool">
+            2019 &copy; BuildSchool
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            if ($(".about button").is(":visible")) {
+                $(".about ul").hide();
+                $(".about button").on("click", function () {
+                    $(".about ul").toggle();
+                    $(".about button i").toggleClass("fa-caret-down").toggleClass("fa-caret-up");
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
