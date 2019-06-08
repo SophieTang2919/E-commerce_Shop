@@ -462,7 +462,7 @@ a:hover {
 
 .index-image {
   height: 400px;
-  background: url(/shop/images/Home.jpg) center center no-repeat;
+  background: url(/images/Home.jpg) center center no-repeat;
   background-size: cover;
 }
 
